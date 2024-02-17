@@ -285,7 +285,7 @@ h3{
 /* EXPERIENCE SECTION */
 
 #skills {
-  position: relative;
+ position: relative; 
 }
 
 .experience-sub-title {
@@ -297,7 +297,7 @@ h3{
 
 /* skills section */
 #skills {
-  position: relative;
+ 
   margin-top: 7rem;
   margin-bottom: 11rem;
 }
@@ -336,6 +336,7 @@ article .icon {
 }
 /* prpject section */
 #projects {
+  display: none;
   position: relative;
  
 }
@@ -366,13 +367,63 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+#projects-grid{
+ 
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  "container_1 container_1 container_1 container_2"
+  "container_3 container_4 container_4 container_5";
+  grid-gap: 10px;
+  width: 105%;
+  
+  
+  
+}
+.container_1{
+  grid-area: container_1;
+}
+.container_2{
+  grid-area: container_2;
+}
+.container_3{
+  grid-area: container_3;
+}
+.container_4{
+  grid-area: container_4;
+}
+.container_5{
+  grid-area: container_5;
+}
+.container_1,.container_2,.container_3,.container_4,.container_5{
+  position: relative;
+}
+#projects-grid img{
+ 
+  max-width: 100%;
+  
+  object-fit: cover;
+}
+.project_des{
+position: absolute;
+top: 30%;
+left: 30%;
+text-align: center;
+}
+.project_des h4{
+  color: rgb(237, 233, 233);
+}
+.buttons{
+  display: inline;
+  
+}
 /* CONTACT */
 
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 52vh;
+   height: 60vh; 
   margin-top: 8rem;
 }
 
