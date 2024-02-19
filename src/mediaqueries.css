@@ -33,7 +33,7 @@
        margin-top:3rem;
     }
     .section__pic-container{
-    margin-bottom: -5rem;
+    margin-bottom: -4rem;
     margin-top: 1rem;
     }
     .about-containers{
@@ -69,6 +69,8 @@
    
     #contact{
       margin: 0;
+
+    
     }
     #skills{
       height: 125vh;
@@ -147,13 +149,20 @@
       left: 30%;
     }
   }
-  @media  screen and (max-width: 400px){
+  @media  screen and (max-width: 500px){
     #skills{
-      height: 150vh;
+      height: 130vh;
     }
     #projects{
-      height: 185vh;
+      height: 180vh;
     }
+    #projects-grid{
+      margin-left: -3rem;
+    }
+    .project_des{
+      left: 35%;
+    }
+    
   }
   @media  screen and (max-width: 350px){
     .profile{
@@ -163,6 +172,48 @@
       height: 200vh;
     }
     #projects{
-      height: 250vh;
+      height: 270vh;
+    }
+    #projects-grid{
+      margin-left: -2rem;
+    }
+    #contact{  
+flex-wrap: nowrap;
+    }
+    .contact-info-upper-container{
+     border: none;
+     margin: 0;
+    }
+    .nav-links-container{
+      margin: 0;
+
+    }
+  }
+  @media screen and (max-width: 1100px) and (min-width: 602px) {
+    #projects-grid{
+ 
+      padding: 40px 0px;
+      display: grid;
+      grid-template-areas:
+      "container_1  container_1 container_2"
+      "container_3 container_4 container_5";
+      grid-gap: 10px;
+      width: 150%;
+      margin-left: rem;
+    }
+    .container_1{
+      grid-area: container_1;
+    }
+    .container_2{
+      grid-area: container_2;
+    }
+    .container_3{
+      grid-area: container_3;
+    }
+    .container_4{
+      grid-area: container_4;
+    }
+    .container_5{
+      grid-area: container_5;
     }
   }
