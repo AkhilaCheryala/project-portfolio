@@ -151,10 +151,13 @@
   }
   @media  screen and (max-width: 500px){
     #skills{
-      height: 130vh;
+      height: 140vh;
     }
     #projects{
       height: 180vh;
+    }
+    .title{
+      margin-top: 1rem;
     }
     #projects-grid{
       margin-left: -3rem;
