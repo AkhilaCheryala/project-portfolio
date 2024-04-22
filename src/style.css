@@ -486,3 +486,7 @@ footer {
 footer p {
   text-align: center;
 }
+.project-grid video{
+  object-fit: contain;
+  max-width: 100%;
+}
